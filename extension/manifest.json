@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Pinboard Saver",
+  "version": "0.1.0",
+  "description": "Save the current tab to pinboard.in with one click.",
+  "permissions": ["activeTab", "storage", "contextMenus"],
+  "host_permissions": ["https://api.pinboard.in/*"],
+  "action": {
+    "default_title": "Save to Pinboard"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

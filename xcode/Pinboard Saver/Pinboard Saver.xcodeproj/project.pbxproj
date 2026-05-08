@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBB839FD2FAD5AB80047535E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB839FC2FAD5AB80047535E /* AppDelegate.swift */; };
+		CBB839FF2FAD5AB80047535E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB839FE2FAD5AB80047535E /* SceneDelegate.swift */; };
+		CBB83A022FAD5AB80047535E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A002FAD5AB80047535E /* LaunchScreen.storyboard */; };
+		CBB83A052FAD5AB80047535E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A032FAD5AB80047535E /* Main.storyboard */; };
+		CBB83A0E2FAD5AB90047535E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB83A0D2FAD5AB90047535E /* AppDelegate.swift */; };
+		CBB83A112FAD5AB90047535E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A0F2FAD5AB90047535E /* Main.storyboard */; };
+		CBB83A182FAD5AB90047535E /* Pinboard Saver Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CBB83A172FAD5AB90047535E /* Pinboard Saver Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBB83A222FAD5AB90047535E /* Pinboard Saver Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CBB83A212FAD5AB90047535E /* Pinboard Saver Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBB83A272FAD5AB90047535E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = CBB839EC2FAD5AB80047535E /* Main.html */; };
+		CBB83A282FAD5AB90047535E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = CBB839EC2FAD5AB80047535E /* Main.html */; };
+		CBB83A292FAD5AB90047535E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB839EE2FAD5AB80047535E /* Icon.png */; };
+		CBB83A2A2FAD5AB90047535E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB839EE2FAD5AB80047535E /* Icon.png */; };
+		CBB83A2B2FAD5AB90047535E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = CBB839EF2FAD5AB80047535E /* Style.css */; };
+		CBB83A2C2FAD5AB90047535E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = CBB839EF2FAD5AB80047535E /* Style.css */; };
+		CBB83A2D2FAD5AB90047535E /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB839F02FAD5AB80047535E /* Script.js */; };
+		CBB83A2E2FAD5AB90047535E /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB839F02FAD5AB80047535E /* Script.js */; };
+		CBB83A2F2FAD5AB90047535E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB839F12FAD5AB80047535E /* ViewController.swift */; };
+		CBB83A302FAD5AB90047535E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB839F12FAD5AB80047535E /* ViewController.swift */; };
+		CBB83A312FAD5AB90047535E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB839F22FAD5AB80047535E /* Assets.xcassets */; };
+		CBB83A322FAD5AB90047535E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB839F22FAD5AB80047535E /* Assets.xcassets */; };
+		CBB83A332FAD5AB90047535E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB839F42FAD5AB80047535E /* SafariWebExtensionHandler.swift */; };
+		CBB83A342FAD5AB90047535E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB839F42FAD5AB80047535E /* SafariWebExtensionHandler.swift */; };
+		CBB83A4A2FAD5AB90047535E /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A462FAD5AB90047535E /* background.js */; };
+		CBB83A4B2FAD5AB90047535E /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A472FAD5AB90047535E /* options.js */; };
+		CBB83A4C2FAD5AB90047535E /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A482FAD5AB90047535E /* manifest.json */; };
+		CBB83A4D2FAD5AB90047535E /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A492FAD5AB90047535E /* options.html */; };
+		CBB83A4E2FAD5AB90047535E /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A462FAD5AB90047535E /* background.js */; };
+		CBB83A4F2FAD5AB90047535E /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A472FAD5AB90047535E /* options.js */; };
+		CBB83A502FAD5AB90047535E /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A482FAD5AB90047535E /* manifest.json */; };
+		CBB83A512FAD5AB90047535E /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A492FAD5AB90047535E /* options.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBB83A192FAD5AB90047535E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB839E62FAD5AB80047535E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBB83A162FAD5AB90047535E;
+			remoteInfo = "Pinboard Saver Extension (iOS)";
+		};
+		CBB83A232FAD5AB90047535E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB839E62FAD5AB80047535E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBB83A202FAD5AB90047535E;
+			remoteInfo = "Pinboard Saver Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBB83A3A2FAD5AB90047535E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBB83A182FAD5AB90047535E /* Pinboard Saver Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A412FAD5AB90047535E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBB83A222FAD5AB90047535E /* Pinboard Saver Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CBB839ED2FAD5AB80047535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		CBB839EE2FAD5AB80047535E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CBB839EF2FAD5AB80047535E /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		CBB839F02FAD5AB80047535E /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		CBB839F12FAD5AB80047535E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBB839F22FAD5AB80047535E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBB839F42FAD5AB80047535E /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		CBB839F92FAD5AB80047535E /* Pinboard Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pinboard Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB839FC2FAD5AB80047535E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBB839FE2FAD5AB80047535E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBB83A012FAD5AB80047535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBB83A042FAD5AB80047535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBB83A062FAD5AB80047535E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB83A0B2FAD5AB90047535E /* Pinboard Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pinboard Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB83A0D2FAD5AB90047535E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBB83A102FAD5AB90047535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBB83A122FAD5AB90047535E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB83A172FAD5AB90047535E /* Pinboard Saver Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pinboard Saver Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB83A1C2FAD5AB90047535E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB83A212FAD5AB90047535E /* Pinboard Saver Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pinboard Saver Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB83A262FAD5AB90047535E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB83A462FAD5AB90047535E /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
+		CBB83A472FAD5AB90047535E /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = ../../../extension/options.js; sourceTree = "<group>"; };
+		CBB83A482FAD5AB90047535E /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		CBB83A492FAD5AB90047535E /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../../extension/options.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBB839F62FAD5AB80047535E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A082FAD5AB90047535E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A142FAD5AB90047535E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A1E2FAD5AB90047535E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBB839E52FAD5AB80047535E = {
+			isa = PBXGroup;
+			children = (
+				CBB839EA2FAD5AB80047535E /* Shared (App) */,
+				CBB839F32FAD5AB80047535E /* Shared (Extension) */,
+				CBB839FB2FAD5AB80047535E /* iOS (App) */,
+				CBB83A0C2FAD5AB90047535E /* macOS (App) */,
+				CBB83A1B2FAD5AB90047535E /* iOS (Extension) */,
+				CBB83A252FAD5AB90047535E /* macOS (Extension) */,
+				CBB839FA2FAD5AB80047535E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBB839EA2FAD5AB80047535E /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				CBB839F12FAD5AB80047535E /* ViewController.swift */,
+				CBB839F22FAD5AB80047535E /* Assets.xcassets */,
+				CBB839EB2FAD5AB80047535E /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		CBB839EB2FAD5AB80047535E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBB839EC2FAD5AB80047535E /* Main.html */,
+				CBB839EE2FAD5AB80047535E /* Icon.png */,
+				CBB839EF2FAD5AB80047535E /* Style.css */,
+				CBB839F02FAD5AB80047535E /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBB839F32FAD5AB80047535E /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				CBB83A452FAD5AB90047535E /* Resources */,
+				CBB839F42FAD5AB80047535E /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		CBB839FA2FAD5AB80047535E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB839F92FAD5AB80047535E /* Pinboard Saver.app */,
+				CBB83A0B2FAD5AB90047535E /* Pinboard Saver.app */,
+				CBB83A172FAD5AB90047535E /* Pinboard Saver Extension.appex */,
+				CBB83A212FAD5AB90047535E /* Pinboard Saver Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBB839FB2FAD5AB80047535E /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				CBB839FC2FAD5AB80047535E /* AppDelegate.swift */,
+				CBB839FE2FAD5AB80047535E /* SceneDelegate.swift */,
+				CBB83A002FAD5AB80047535E /* LaunchScreen.storyboard */,
+				CBB83A032FAD5AB80047535E /* Main.storyboard */,
+				CBB83A062FAD5AB80047535E /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		CBB83A0C2FAD5AB90047535E /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				CBB83A0D2FAD5AB90047535E /* AppDelegate.swift */,
+				CBB83A0F2FAD5AB90047535E /* Main.storyboard */,
+				CBB83A122FAD5AB90047535E /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		CBB83A1B2FAD5AB90047535E /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				CBB83A1C2FAD5AB90047535E /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		CBB83A252FAD5AB90047535E /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				CBB83A262FAD5AB90047535E /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		CBB83A452FAD5AB90047535E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBB83A462FAD5AB90047535E /* background.js */,
+				CBB83A472FAD5AB90047535E /* options.js */,
+				CBB83A482FAD5AB90047535E /* manifest.json */,
+				CBB83A492FAD5AB90047535E /* options.html */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBB839F82FAD5AB80047535E /* Pinboard Saver (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB83A3B2FAD5AB90047535E /* Build configuration list for PBXNativeTarget "Pinboard Saver (iOS)" */;
+			buildPhases = (
+				CBB839F52FAD5AB80047535E /* Sources */,
+				CBB839F62FAD5AB80047535E /* Frameworks */,
+				CBB839F72FAD5AB80047535E /* Resources */,
+				CBB83A3A2FAD5AB90047535E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBB83A1A2FAD5AB90047535E /* PBXTargetDependency */,
+			);
+			name = "Pinboard Saver (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Pinboard Saver (iOS)";
+			productReference = CBB839F92FAD5AB80047535E /* Pinboard Saver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBB83A0A2FAD5AB90047535E /* Pinboard Saver (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB83A422FAD5AB90047535E /* Build configuration list for PBXNativeTarget "Pinboard Saver (macOS)" */;
+			buildPhases = (
+				CBB83A072FAD5AB90047535E /* Sources */,
+				CBB83A082FAD5AB90047535E /* Frameworks */,
+				CBB83A092FAD5AB90047535E /* Resources */,
+				CBB83A412FAD5AB90047535E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBB83A242FAD5AB90047535E /* PBXTargetDependency */,
+			);
+			name = "Pinboard Saver (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Pinboard Saver (macOS)";
+			productReference = CBB83A0B2FAD5AB90047535E /* Pinboard Saver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBB83A162FAD5AB90047535E /* Pinboard Saver Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB83A372FAD5AB90047535E /* Build configuration list for PBXNativeTarget "Pinboard Saver Extension (iOS)" */;
+			buildPhases = (
+				CBB83A132FAD5AB90047535E /* Sources */,
+				CBB83A142FAD5AB90047535E /* Frameworks */,
+				CBB83A152FAD5AB90047535E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pinboard Saver Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Pinboard Saver Extension (iOS)";
+			productReference = CBB83A172FAD5AB90047535E /* Pinboard Saver Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CBB83A202FAD5AB90047535E /* Pinboard Saver Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB83A3E2FAD5AB90047535E /* Build configuration list for PBXNativeTarget "Pinboard Saver Extension (macOS)" */;
+			buildPhases = (
+				CBB83A1D2FAD5AB90047535E /* Sources */,
+				CBB83A1E2FAD5AB90047535E /* Frameworks */,
+				CBB83A1F2FAD5AB90047535E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pinboard Saver Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Pinboard Saver Extension (macOS)";
+			productReference = CBB83A212FAD5AB90047535E /* Pinboard Saver Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBB839E62FAD5AB80047535E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					CBB839F82FAD5AB80047535E = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					CBB83A0A2FAD5AB90047535E = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					CBB83A162FAD5AB90047535E = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					CBB83A202FAD5AB90047535E = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CBB839E92FAD5AB80047535E /* Build configuration list for PBXProject "Pinboard Saver" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBB839E52FAD5AB80047535E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CBB839FA2FAD5AB80047535E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBB839F82FAD5AB80047535E /* Pinboard Saver (iOS) */,
+				CBB83A0A2FAD5AB90047535E /* Pinboard Saver (macOS) */,
+				CBB83A162FAD5AB90047535E /* Pinboard Saver Extension (iOS) */,
+				CBB83A202FAD5AB90047535E /* Pinboard Saver Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBB839F72FAD5AB80047535E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB83A292FAD5AB90047535E /* Icon.png in Resources */,
+				CBB83A022FAD5AB80047535E /* LaunchScreen.storyboard in Resources */,
+				CBB83A272FAD5AB90047535E /* Main.html in Resources */,
+				CBB83A2D2FAD5AB90047535E /* Script.js in Resources */,
+				CBB83A312FAD5AB90047535E /* Assets.xcassets in Resources */,
+				CBB83A052FAD5AB80047535E /* Main.storyboard in Resources */,
+				CBB83A2B2FAD5AB90047535E /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A092FAD5AB90047535E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB83A2A2FAD5AB90047535E /* Icon.png in Resources */,
+				CBB83A2C2FAD5AB90047535E /* Style.css in Resources */,
+				CBB83A112FAD5AB90047535E /* Main.storyboard in Resources */,
+				CBB83A2E2FAD5AB90047535E /* Script.js in Resources */,
+				CBB83A322FAD5AB90047535E /* Assets.xcassets in Resources */,
+				CBB83A282FAD5AB90047535E /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A152FAD5AB90047535E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB83A4E2FAD5AB90047535E /* background.js in Resources */,
+				CBB83A502FAD5AB90047535E /* manifest.json in Resources */,
+				CBB83A4F2FAD5AB90047535E /* options.js in Resources */,
+				CBB83A512FAD5AB90047535E /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A1F2FAD5AB90047535E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB83A4A2FAD5AB90047535E /* background.js in Resources */,
+				CBB83A4C2FAD5AB90047535E /* manifest.json in Resources */,
+				CBB83A4B2FAD5AB90047535E /* options.js in Resources */,
+				CBB83A4D2FAD5AB90047535E /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBB839F52FAD5AB80047535E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB83A2F2FAD5AB90047535E /* ViewController.swift in Sources */,
+				CBB839FD2FAD5AB80047535E /* AppDelegate.swift in Sources */,
+				CBB839FF2FAD5AB80047535E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A072FAD5AB90047535E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB83A302FAD5AB90047535E /* ViewController.swift in Sources */,
+				CBB83A0E2FAD5AB90047535E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A132FAD5AB90047535E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB83A332FAD5AB90047535E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB83A1D2FAD5AB90047535E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB83A342FAD5AB90047535E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBB83A1A2FAD5AB90047535E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBB83A162FAD5AB90047535E /* Pinboard Saver Extension (iOS) */;
+			targetProxy = CBB83A192FAD5AB90047535E /* PBXContainerItemProxy */;
+		};
+		CBB83A242FAD5AB90047535E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBB83A202FAD5AB90047535E /* Pinboard Saver Extension (macOS) */;
+			targetProxy = CBB83A232FAD5AB90047535E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBB839EC2FAD5AB80047535E /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB839ED2FAD5AB80047535E /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		CBB83A002FAD5AB80047535E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB83A012FAD5AB80047535E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CBB83A032FAD5AB80047535E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB83A042FAD5AB80047535E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBB83A0F2FAD5AB90047535E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB83A102FAD5AB90047535E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBB83A352FAD5AB90047535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBB83A362FAD5AB90047535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CBB83A382FAD5AB90047535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3PT577K5D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinboard Saver Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlolson.pinboard-saver.Extension";
+				PRODUCT_NAME = "Pinboard Saver Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBB83A392FAD5AB90047535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3PT577K5D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinboard Saver Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlolson.pinboard-saver.Extension";
+				PRODUCT_NAME = "Pinboard Saver Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBB83A3C2FAD5AB90047535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3PT577K5D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinboard Saver";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlolson.pinboard-saver";
+				PRODUCT_NAME = "Pinboard Saver";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBB83A3D2FAD5AB90047535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3PT577K5D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinboard Saver";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlolson.pinboard-saver";
+				PRODUCT_NAME = "Pinboard Saver";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBB83A3F2FAD5AB90047535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3PT577K5D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinboard Saver Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlolson.pinboard-saver.Extension";
+				PRODUCT_NAME = "Pinboard Saver Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CBB83A402FAD5AB90047535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3PT577K5D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinboard Saver Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlolson.pinboard-saver.Extension";
+				PRODUCT_NAME = "Pinboard Saver Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CBB83A432FAD5AB90047535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3PT577K5D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinboard Saver";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlolson.pinboard-saver";
+				PRODUCT_NAME = "Pinboard Saver";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CBB83A442FAD5AB90047535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3PT577K5D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pinboard Saver";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlolson.pinboard-saver";
+				PRODUCT_NAME = "Pinboard Saver";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBB839E92FAD5AB80047535E /* Build configuration list for PBXProject "Pinboard Saver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB83A352FAD5AB90047535E /* Debug */,
+				CBB83A362FAD5AB90047535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB83A372FAD5AB90047535E /* Build configuration list for PBXNativeTarget "Pinboard Saver Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB83A382FAD5AB90047535E /* Debug */,
+				CBB83A392FAD5AB90047535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB83A3B2FAD5AB90047535E /* Build configuration list for PBXNativeTarget "Pinboard Saver (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB83A3C2FAD5AB90047535E /* Debug */,
+				CBB83A3D2FAD5AB90047535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB83A3E2FAD5AB90047535E /* Build configuration list for PBXNativeTarget "Pinboard Saver Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB83A3F2FAD5AB90047535E /* Debug */,
+				CBB83A402FAD5AB90047535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB83A422FAD5AB90047535E /* Build configuration list for PBXNativeTarget "Pinboard Saver (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB83A432FAD5AB90047535E /* Debug */,
+				CBB83A442FAD5AB90047535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBB839E62FAD5AB80047535E /* Project object */;
+}

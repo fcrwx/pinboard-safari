@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4C583B2FAD601A0091AC1B /* icon-256.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4C58382FAD601A0091AC1B /* icon-256.png */; };
+		CB4C583C2FAD601A0091AC1B /* icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4C58352FAD601A0091AC1B /* icon-48.png */; };
+		CB4C583D2FAD601A0091AC1B /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4C58372FAD601A0091AC1B /* icon-128.png */; };
+		CB4C583E2FAD601A0091AC1B /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4C58392FAD601A0091AC1B /* icon-512.png */; };
+		CB4C583F2FAD601A0091AC1B /* icon-96.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4C58362FAD601A0091AC1B /* icon-96.png */; };
 		CBB839FD2FAD5AB80047535E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB839FC2FAD5AB80047535E /* AppDelegate.swift */; };
 		CBB839FF2FAD5AB80047535E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB839FE2FAD5AB80047535E /* SceneDelegate.swift */; };
 		CBB83A022FAD5AB80047535E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A002FAD5AB80047535E /* LaunchScreen.storyboard */; };
@@ -82,6 +87,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB4C58352FAD601A0091AC1B /* icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-48.png"; sourceTree = "<group>"; };
+		CB4C58362FAD601A0091AC1B /* icon-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-96.png"; sourceTree = "<group>"; };
+		CB4C58372FAD601A0091AC1B /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-128.png"; sourceTree = "<group>"; };
+		CB4C58382FAD601A0091AC1B /* icon-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-256.png"; sourceTree = "<group>"; };
+		CB4C58392FAD601A0091AC1B /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-512.png"; sourceTree = "<group>"; };
 		CBB839ED2FAD5AB80047535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
 		CBB839EE2FAD5AB80047535E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		CBB839EF2FAD5AB80047535E /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -141,6 +151,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4C583A2FAD601A0091AC1B /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C58352FAD601A0091AC1B /* icon-48.png */,
+				CB4C58362FAD601A0091AC1B /* icon-96.png */,
+				CB4C58372FAD601A0091AC1B /* icon-128.png */,
+				CB4C58382FAD601A0091AC1B /* icon-256.png */,
+				CB4C58392FAD601A0091AC1B /* icon-512.png */,
+			);
+			name = icons;
+			path = "/Users/karl/dev/pinboard-safari/extension/icons";
+			sourceTree = "<absolute>";
+		};
 		CBB839E52FAD5AB80047535E = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +203,7 @@
 			children = (
 				CBB83A452FAD5AB90047535E /* Resources */,
 				CBB839F42FAD5AB80047535E /* SafariWebExtensionHandler.swift */,
+				CB4C583A2FAD601A0091AC1B /* icons */,
 			);
 			path = "Shared (Extension)";
 			sourceTree = "<group>";
@@ -418,6 +442,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB83A4A2FAD5AB90047535E /* background.js in Resources */,
+				CB4C583B2FAD601A0091AC1B /* icon-256.png in Resources */,
+				CB4C583C2FAD601A0091AC1B /* icon-48.png in Resources */,
+				CB4C583D2FAD601A0091AC1B /* icon-128.png in Resources */,
+				CB4C583E2FAD601A0091AC1B /* icon-512.png in Resources */,
+				CB4C583F2FAD601A0091AC1B /* icon-96.png in Resources */,
 				CBB83A4C2FAD5AB90047535E /* manifest.json in Resources */,
 				CBB83A4B2FAD5AB90047535E /* options.js in Resources */,
 				CBB83A4D2FAD5AB90047535E /* options.html in Resources */,

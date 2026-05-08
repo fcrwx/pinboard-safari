@@ -6,17 +6,17 @@
   "permissions": ["activeTab", "storage", "contextMenus"],
   "host_permissions": ["https://api.pinboard.in/*"],
   "icons": {
-    "48": "icons/icon-48.png",
-    "96": "icons/icon-96.png",
-    "128": "icons/icon-128.png",
-    "256": "icons/icon-256.png",
-    "512": "icons/icon-512.png"
+    "48": "icon-48.png",
+    "96": "icon-96.png",
+    "128": "icon-128.png",
+    "256": "icon-256.png",
+    "512": "icon-512.png"
   },
   "action": {
     "default_title": "Save to Pinboard",
     "default_icon": {
-      "48": "icons/icon-48.png",
-      "96": "icons/icon-96.png"
+      "48": "icon-48.png",
+      "96": "icon-96.png"
     }
   },
   "background": {

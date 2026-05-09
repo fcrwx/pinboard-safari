@@ -42,6 +42,10 @@
 		CBB83A4F2FAD5AB90047535E /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A472FAD5AB90047535E /* options.js */; };
 		CBB83A502FAD5AB90047535E /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A482FAD5AB90047535E /* manifest.json */; };
 		CBB83A512FAD5AB90047535E /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A492FAD5AB90047535E /* options.html */; };
+		CBB83A602FAD5AB90047535E /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A522FAD5AB90047535E /* popup.html */; };
+		CBB83A612FAD5AB90047535E /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A532FAD5AB90047535E /* popup.js */; };
+		CBB83A622FAD5AB90047535E /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A522FAD5AB90047535E /* popup.html */; };
+		CBB83A632FAD5AB90047535E /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = CBB83A532FAD5AB90047535E /* popup.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +121,8 @@
 		CBB83A472FAD5AB90047535E /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = ../../../extension/options.js; sourceTree = "<group>"; };
 		CBB83A482FAD5AB90047535E /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
 		CBB83A492FAD5AB90047535E /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../../extension/options.html; sourceTree = "<group>"; };
+		CBB83A522FAD5AB90047535E /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../extension/popup.html; sourceTree = "<group>"; };
+		CBB83A532FAD5AB90047535E /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../extension/popup.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +270,8 @@
 				CBB83A472FAD5AB90047535E /* options.js */,
 				CBB83A482FAD5AB90047535E /* manifest.json */,
 				CBB83A492FAD5AB90047535E /* options.html */,
+				CBB83A522FAD5AB90047535E /* popup.html */,
+				CBB83A532FAD5AB90047535E /* popup.js */,
 			);
 			name = Resources;
 			path = "Shared (Extension)";
@@ -434,6 +442,8 @@
 				CBB83A502FAD5AB90047535E /* manifest.json in Resources */,
 				CBB83A4F2FAD5AB90047535E /* options.js in Resources */,
 				CBB83A512FAD5AB90047535E /* options.html in Resources */,
+				CBB83A622FAD5AB90047535E /* popup.html in Resources */,
+				CBB83A632FAD5AB90047535E /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +460,8 @@
 				CBB83A4C2FAD5AB90047535E /* manifest.json in Resources */,
 				CBB83A4B2FAD5AB90047535E /* options.js in Resources */,
 				CBB83A4D2FAD5AB90047535E /* options.html in Resources */,
+				CBB83A602FAD5AB90047535E /* popup.html in Resources */,
+				CBB83A612FAD5AB90047535E /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

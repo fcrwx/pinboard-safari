@@ -3,7 +3,7 @@
   "name": "Pinboard Saver",
   "version": "0.1.0",
   "description": "Save the current tab to pinboard.in with one click.",
-  "permissions": ["activeTab", "storage", "contextMenus"],
+  "permissions": ["activeTab", "storage"],
   "host_permissions": ["https://api.pinboard.in/*"],
   "icons": {
     "48": "icon-48.png",
@@ -14,6 +14,7 @@
   },
   "action": {
     "default_title": "Save to Pinboard",
+    "default_popup": "popup.html",
     "default_icon": {
       "48": "icon-48.png",
       "96": "icon-96.png"

@@ -5,15 +5,15 @@ async function getToken() {
   return token;
 }
 
-async function saveCurrentTab() {
+async function saveCurrentTab(shared) {
   const token = await getToken();
   if (!token) {
     browser.runtime.openOptionsPage();
-    return;
+    return { ok: false, needsToken: true };
   }
 
   const [tab] = await browser.tabs.query({ active: true, currentWindow: true });
-  if (!tab?.url) return;
+  if (!tab?.url) return { ok: false };
 
   const params = new URLSearchParams({
     url: tab.url,
@@ -21,10 +21,10 @@ async function saveCurrentTab() {
     auth_token: token,
     format: "json",
     toread: "no",
-    shared: "no",
+    shared: shared === "yes" ? "yes" : "no",
   });
 
-  let diag = { when: new Date().toISOString(), url: tab.url };
+  let diag = { when: new Date().toISOString(), url: tab.url, shared: params.get("shared") };
   try {
     const res = await fetch(`${PINBOARD_API}/posts/add?${params}`);
     const text = await res.text();
@@ -41,13 +41,17 @@ async function saveCurrentTab() {
     }
     diag.ok = ok;
     flashBadge(ok ? "✓" : "!", ok ? "#2a7f3a" : "#c33");
+    await browser.storage.local.set({ lastResult: diag });
+    console.log("Pinboard result:", diag);
+    return { ok };
   } catch (err) {
     diag.ok = false;
     diag.fetchError = String(err);
     flashBadge("!", "#c33");
+    await browser.storage.local.set({ lastResult: diag });
+    console.log("Pinboard result:", diag);
+    return { ok: false };
   }
-  await browser.storage.local.set({ lastResult: diag });
-  console.log("Pinboard result:", diag);
 }
 
 function flashBadge(text, color) {
@@ -56,18 +60,9 @@ function flashBadge(text, color) {
   setTimeout(() => browser.action.setBadgeText({ text: "" }), 2000);
 }
 
-browser.action.onClicked.addListener(saveCurrentTab);
-
-browser.runtime.onInstalled.addListener(() => {
-  browser.contextMenus.create({
-    id: "open-pinboard",
-    title: "Open pinboard.in",
-    contexts: ["action"],
-  });
-});
-
-browser.contextMenus.onClicked.addListener((info) => {
-  if (info.menuItemId === "open-pinboard") {
-    browser.tabs.create({ url: "https://pinboard.in" });
+browser.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+  if (msg?.type === "save") {
+    saveCurrentTab(msg.shared).then(sendResponse);
+    return true;
   }
 });

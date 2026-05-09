@@ -24,19 +24,30 @@ async function saveCurrentTab() {
     shared: "no",
   });
 
+  let diag = { when: new Date().toISOString(), url: tab.url };
   try {
     const res = await fetch(`${PINBOARD_API}/posts/add?${params}`);
-    const data = await res.json();
-    if (data.result_code === "done") {
-      flashBadge("✓", "#2a7f3a");
-    } else {
-      flashBadge("!", "#c33");
-      console.error("Pinboard error:", data);
+    const text = await res.text();
+    diag.status = res.status;
+    diag.body = text.slice(0, 500);
+    let ok = false;
+    try {
+      const data = JSON.parse(text);
+      ok = data.result_code === "done";
+      diag.parsed = data;
+    } catch (e) {
+      ok = res.ok && /done/i.test(text);
+      diag.parseError = String(e);
     }
+    diag.ok = ok;
+    flashBadge(ok ? "✓" : "!", ok ? "#2a7f3a" : "#c33");
   } catch (err) {
+    diag.ok = false;
+    diag.fetchError = String(err);
     flashBadge("!", "#c33");
-    console.error(err);
   }
+  await browser.storage.local.set({ lastResult: diag });
+  console.log("Pinboard result:", diag);
 }
 
 function flashBadge(text, color) {

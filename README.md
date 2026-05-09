@@ -49,7 +49,14 @@ Hit ▶ Run in Xcode. A stub host app launches; you can quit it. The extension i
 3. Safari → Settings → Extensions → enable **Pinboard Saver**.
 4. Click the puzzle-piece icon in the Safari toolbar and pin the Pinboard Saver button.
 
-### 5. Set your token
+### 5. Grant API host permission
+
+Unlike Chrome/Firefox, Safari does **not** auto-grant the hosts declared in `host_permissions`. Without this step the bookmark will save but the badge will show `!` because the response is blocked.
+
+1. Safari → Settings → **Websites** → scroll to the **Extensions** section in the sidebar → **Pinboard Saver**.
+2. Under "Configured Websites", set **`api.pinboard.in`** to **Allow**. (If it's not listed yet, click the toolbar button once first to trigger the request, then come back.)
+
+### 6. Set your token
 
 Click the toolbar button once. The options page opens. Paste your token, click Save.
 
